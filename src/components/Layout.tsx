@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu, Search, ChevronDown, Shield, AlertTriangle, Zap, Lock, Server, Network, Router, Settings, LayoutDashboard, FileText } from 'lucide-react'
+import { Menu, Search, ChevronDown, Shield, AlertTriangle, Zap, Lock, Server, Network, Router, Settings, LayoutDashboard, FileText, Globe } from 'lucide-react'
 import Notifications from './Notifications'
 import UserMenu from './UserMenu'
 import { Link } from 'react-router-dom'
@@ -22,6 +22,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     { name: 'Incidents', icon: AlertTriangle, path: '/incidents' },
     { name: 'Risk Management', icon: Shield, path: '/risk-management' },
     { name: 'Infrastructure', icon: Server, path: '/infrastructure' },
+    { name: 'Applications', icon: Globe, path: '/applications' },
     { name: 'Vulnerabilities', icon: Zap, path: '/vulnerabilities' },
     { name: 'Compliance', icon: Lock, path: '/compliance' },
     { name: 'Reports', icon: FileText, path: '/reports' },
